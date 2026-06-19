@@ -1,53 +1,53 @@
-# House-Price-Prediction
+# House Price Prediction
 
-![GitHub stars](https://img.shields.io/github/stars/bhavesh016/House-Price-Prediction?style=for-the-badge&logo=github) ![GitHub forks](https://img.shields.io/github/forks/bhavesh016/House-Price-Prediction?style=for-the-badge&logo=github) ![GitHub issues](https://img.shields.io/github/issues/bhavesh016/House-Price-Prediction?style=for-the-badge&logo=github) ![Last commit](https://img.shields.io/github/last-commit/bhavesh016/House-Price-Prediction?style=for-the-badge&logo=github)
+## Objective
+To develop and evaluate machine learning models for predicting house prices based on property characteristics and amenities.
 
-## 📑 Table of Contents
+## Dataset
+- Dataset: Housing.csv
+- Rows: 545
+- Columns: 13
+- Target Variable: Price
 
-- [Description](#description)
-- [Quick Start](#quick-start)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
+## Models Used
+- Linear Regression
+- Random Forest Regressor
 
-## 📝 Description
+## Results
 
-House Price Prediction using Machine Learning with Linear Regression and Random Forest Regressor.
+| Model | MAE | RMSE | R² Score |
+|---------|---------|---------|---------|
+| Linear Regression | 970,043 | 1,324,507 | 0.653 |
+| Random Forest Regressor | 1,021,546 | 1,400,566 | 0.612 |
 
-## ⚡ Quick Start
+## Key Findings
+- Area was the most influential feature affecting house prices.
+- Bathrooms, stories, and parking facilities also contributed significantly.
+- Linear Regression outperformed Random Forest with a higher R² score.
+- Location and amenities had a noticeable impact on house prices.
 
-```bash
+## Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook
 
-# 1. Clone the repository
-git clone https://github.com/bhavesh016/House-Price-Prediction.git
+## Project Structure
 
-# See the Development Setup section below
-```
-
-## 📁 Project Structure
-
-```
-.
-├── Housing.csv
+```text
+HousePricePrediction_BhaveshBhaisare
+│
 ├── analysis.ipynb
-├── charts
-│   ├── heatmap.png
-│   ├── histogram.png
-│   └── scatter.png
-└── summary.pdf.pdf
+├── Housing.csv
+├── summary.pdf
+└── charts
+    ├── histogram.png
+    ├── heatmap.png
+    └── scatter.png
 ```
 
-## 👥 Contributing
-
-Contributions are welcome! Here's the standard flow:
-
-1. **Fork** the repository
-2. **Clone** your fork: `git clone https://github.com/bhavesh016/House-Price-Prediction.git`
-3. **Branch**: `git checkout -b feature/your-feature`
-4. **Commit**: `git commit -m 'feat: add some feature'`
-5. **Push**: `git push origin feature/your-feature`
-6. **Open** a pull request
-
-Please follow the existing code style and include tests for new behavior where applicable.
-
----
-*This README was generated with ❤️ by [ReadmeBuddy](https://readmebuddy.com)*
+## Conclusion
+Machine learning models can effectively estimate house prices using property characteristics. Linear Regression achieved the best performance on this dataset.
